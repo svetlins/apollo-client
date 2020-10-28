@@ -33,7 +33,7 @@
   "scripts": {
     "prebuild": "npm run clean",
     "build": "tsc",
-    "postbuild": "npm run invariants && npm run rollup && npm run prepdist && npm run resolve",
+    "postbuild": "npm run rollup && npm run prepdist && npm run resolve",
     "invariants": "ts-node-script config/processInvariants.ts",
     "rollup": "rollup -c ./config/rollup.config.js",
     "prepdist": "node ./config/prepareDist.js",
